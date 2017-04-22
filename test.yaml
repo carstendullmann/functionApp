@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: functionapp
+ labels:
+   app: web
+spec:
+ containers:
+   - name: frontend
+     image: cadull.azurecr.io/functionapp
+     ports:
+       - containerPort: 80

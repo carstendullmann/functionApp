@@ -28,6 +28,9 @@ msbuild.log
 msbuild.err
 msbuild.wrn
 
+# Kubernetes
+.kube/
+
 # Publish folder
 publish/
 
