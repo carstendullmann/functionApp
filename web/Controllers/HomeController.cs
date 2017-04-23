@@ -15,7 +15,7 @@ namespace funcApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = $"Your application description page on machine {Environment.MachineName}.";
 
             return View();
         }
