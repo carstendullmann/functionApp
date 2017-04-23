@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: functionapp
+  labels:
+    run: functionapp
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    run: functionapp
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: functionapp
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: functionapp
+    spec:
+      containers:
+      - name: functionapp
+        image: cadull.azurecr.io/functionapp
+        ports:
+        - containerPort: 443
+        - containerPort: 80
