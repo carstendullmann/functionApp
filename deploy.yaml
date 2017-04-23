@@ -1,36 +1,32 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: functionapp
+  name: __k8s.service.name__
   labels:
-    run: functionapp
+    run: __k8s.service.name__
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
+  - port: __k8s.service.port__
     targetPort: 80
     protocol: TCP
     name: http
-  - port: 443
-    protocol: TCP
-    name: https
   selector:
-    run: functionapp
+    run: __k8s.selector__
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: functionapp
+  name: __k8s.deployment.name__
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        run: functionapp
+        run: __k8s.selector__
     spec:
       containers:
-      - name: functionapp
+      - name: functionappfrontend
         image: cadull.azurecr.io/functionapp
         ports:
-        - containerPort: 443
         - containerPort: 80
