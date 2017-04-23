@@ -17,7 +17,7 @@ spec:
   selector:
     run: functionapp
 ---
-apiVersion: apps/v1beta1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: functionapp
