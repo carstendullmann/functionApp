@@ -9,7 +9,7 @@ using funcApp.vstests.e2e.PageObjects;
 namespace funcApp.vstests.e2e
 {
     [TestClass]
-    public class SmokeTests
+    public class Functions
     {
         [TestMethod]
         public void RangeForFunctionsIsCreatedAfterRangeIsEntered()

@@ -57,7 +57,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="SmokeTests.cs" />
+    <Compile Include="Functions.cs" />
     <Compile Include="PageObjects\DriverFactory.cs" />
     <Compile Include="PageObjects\NavigationBar.cs" />
     <Compile Include="PageObjects\Page.cs" />
