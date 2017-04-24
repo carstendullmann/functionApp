@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8408CA72-B78F-4E94-956F-498929103803}"
+	ProjectSection(SolutionItems) = preProject
+		local.runSettings = local.runSettings
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "funcApp.vstests.load", "funcApp.vstests.load\funcApp.vstests.load.csproj", "{160ACC28-1CB4-40C7-ACD9-EF12B0578383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "funcApp.vstests.e2e", "funcApp.vstests.e2e\funcApp.vstests.e2e.csproj", "{3E53309E-43B0-44A3-838D-367A9045127B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{160ACC28-1CB4-40C7-ACD9-EF12B0578383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160ACC28-1CB4-40C7-ACD9-EF12B0578383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160ACC28-1CB4-40C7-ACD9-EF12B0578383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160ACC28-1CB4-40C7-ACD9-EF12B0578383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E53309E-43B0-44A3-838D-367A9045127B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E53309E-43B0-44A3-838D-367A9045127B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E53309E-43B0-44A3-838D-367A9045127B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E53309E-43B0-44A3-838D-367A9045127B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
