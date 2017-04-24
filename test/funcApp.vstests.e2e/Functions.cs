@@ -18,7 +18,7 @@ namespace funcApp.vstests.e2e
             {
                 var page = new HomePage(driver)
                     .GoToFunctions()
-                    .EnterRangeAndIntervalForSquareFunction(-1.0,1.0,1.0)
+                    .EnterRangeAndIntervalForSquareFunction(-1.0, 1.0, 1.0)
                     .RequestCalculationOfSquareFunction();
                 var actualValues = page.GetDisplayedValues();
                 Assert.AreEqual(3, actualValues.Count);
