@@ -13,7 +13,9 @@ namespace funcApp.vstests.e2e.PageObjects
             // up, e.g. because a test will need to start somewhere else
             // than all the other tests, this can be extended as needed.
             var driver = (IWebDriver)Activator.CreateInstance(GetDriverType());
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            // due to a phantomjs issue, we need to set the size here, see https://github.com/angular/protractor/issues/585
+            driver.Manage().Window.Size = new System.Drawing.Size(1280, 1024);
             driver.Navigate().GoToUrl(TestRunParameters.HomeUrl);
             return driver;
         }

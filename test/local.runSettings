@@ -2,8 +2,10 @@
 <RunSettings>  
   
   <TestRunParameters>
-    <Parameter name="homeUrl" value="http://localhost:5000" />
+    <!--Parameter name="homeUrl" value="http://localhost:5000" /-->
+    <Parameter name="homeUrl" value="http://52.166.127.173:8080/" />
     <Parameter name="driverType" value="OpenQA.Selenium.Chrome.ChromeDriver" />
+    <!--Parameter name="driverType" value="OpenQA.Selenium.PhantomJS.PhantomJSDriver" /-->
   </TestRunParameters>
   
 </RunSettings>  

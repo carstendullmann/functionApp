@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using System.Threading;
 
 namespace funcApp.vstests.e2e.PageObjects
 {
