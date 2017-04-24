@@ -29,6 +29,7 @@ namespace funcApp.vstests.e2e.PageObjects
             {
                 DriverType = (string)TestContext.Properties["driverType"];
             }
+
         }
     }
 }

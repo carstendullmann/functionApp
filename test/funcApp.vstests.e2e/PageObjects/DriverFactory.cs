@@ -7,6 +7,7 @@ namespace funcApp.vstests.e2e.PageObjects
     {
         public virtual IWebDriver CreateDriver()
         {
+            Console.WriteLine($"Effective Test Run Parameters: '{TestRunParameters.DriverType}' with url '{TestRunParameters.HomeUrl}'");
             // Currently we have everything we need for our tests in 
             // this one method and we do not parameterize anything
             // specific to individual tests. If a need for this will come
