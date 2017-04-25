@@ -1,4 +1,4 @@
-*.swp
+﻿*.swp
 *.*~
 project.lock.json
 .DS_Store
@@ -39,6 +39,6 @@ publish/
 
 # Visual Studio 2015
 .vs/
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
-/test/TestResults
+
+# Test results
+TestResults/
