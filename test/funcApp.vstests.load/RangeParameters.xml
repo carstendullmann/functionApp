@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TestParam>
+  <TestRun>
+    <Lower>-100</Lower>
+    <Upper>100</Upper>
+    <Interval>0.1</Interval>
+  </TestRun>
+  <TestRun>
+    <Lower>-10</Lower>
+    <Upper>5</Upper>
+    <Interval>3</Interval>
+  </TestRun>
+</TestParam>
