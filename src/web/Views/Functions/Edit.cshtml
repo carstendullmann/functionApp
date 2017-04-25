@@ -41,10 +41,12 @@
     @if(Model.Values != null)
     {
         <h3>Calculated Values</h3>
+        <hr />
+
         @foreach(var valuePair in Model.Values)
         {
             <div id="functionValues" class="form-group">
-                <div id="point" class="col-md-offset-4 col-md-1">
+                <div id="point" class="col-md-offset-2 col-md-1">
                     @valuePair.Item1.ToString("0.00")
                 </div>  
                 <div id="value" class="col-md-1">
